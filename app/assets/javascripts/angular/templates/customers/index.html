@@ -2,8 +2,9 @@
   <div class="col-md-12">
     <h1>
       Customers
-      <a class="btn btn-success">Add customer</a>
+      <a class="btn btn-success" ng-click="addCustomer()">Add customer</a>
     </h1>
+
     <input type="text" placeholder="Search" class="form-control" ng-model="query" ng-change="filterCustomers()">
  
     <div ng-show="customers.length">
