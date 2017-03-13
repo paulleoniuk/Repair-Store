@@ -7,10 +7,12 @@
 // It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
 // compiled file.
 //
-// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
+// Read Sprockets README (https://github.com/rails/sprockets#sprockets-di rectives) for details
 // about supported directives.
-//
-//= require jquery
-//= require jquery_ujs
-//= require turbolinks
-//= require_tree .
+
+//= require angular
+//= require angular-router
+//= require angular-rails-templates
+//= require angular-strap
+
+//= require_tree ./angular
