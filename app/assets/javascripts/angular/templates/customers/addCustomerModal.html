@@ -1,0 +1,53 @@
+<div class="modal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form novalidate name="newCustomer" ng-submit="createCustomer()">
+        <div class="modal-header">
+          <button type="button" class="close" aria-label="Close" ng-click="$hide()"><span aria-hidden="true">&times;</span></button>
+          <h2 class="modal-title">Add a customer</h2>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <label>Name:</label>
+            <input class="form-control" name="first_name" type="text" ng-model="new_customer.first_name" required/>
+            <span class="text-danger" ng-show="newCustomer.first_name.$touched && newCustomer.first_name.$invalid">The name is required.</span>
+          </div>
+
+          <div class="form-group">
+            <label>Surname:</label>
+            <input class="form-control" name="last_name" type="text" ng-model="new_customer.last_name" required/>
+            <span class="text-danger" ng-show="newCustomer.last_name.$touched && newCustomer.last_name.$invalid">The surname is required.</span>
+          </div>
+
+          <div class="form-group">
+            <label>Phone:</label>
+            <input class="form-control" name="phone" type="text" ng-model="new_customer.phone" required/>
+            <span class="text-danger" ng-show="newCustomer.phone.$touched && newCustomer.phone.$invalid">The phone is required.</span>
+          </div>
+ 
+          <div class="form-group">
+            <label>E-mail:</label>
+            <input class="form-control" name="email" type="email" ng-model="new_customer.email" required/>
+            <span class="text-danger" ng-show="newCustomer.email.$touched && newCustomer.email.$invalid">The email is required.</span>
+          </div>
+ 
+          <div class="form-group">
+            <label>City:</label>
+            <input class="form-control" name="city" type="text" ng-model="new_customer.city" required/>
+            <span class="text-danger" ng-show="newCustomer.city.$touched && newCustomer.city.$invalid">The city is required.</span>
+          </div>
+ 
+          <div class="form-group">
+            <label>Street:</label>
+            <input class="form-control" name="street" type="text" ng-model="new_customer.street" required/>
+            <span class="text-danger" ng-show="newCustomer.street.$touched && newCustomer.street.$invalid">The street is required.</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" ng-click="$hide()">Close</button>
+          <input ng-disabled="newCustomer.$invalid" class="btn btn-success" type="submit" value="Save"/>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

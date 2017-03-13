@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Repair Store</title>
+    <%= csrf_meta_tags %>
+ 
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+ 
+  <body ng-app="app">
+    <div class="container">
+      <menu></menu>
+        <div ui-view></div>
+    </div>
+  </body>
+</html>
