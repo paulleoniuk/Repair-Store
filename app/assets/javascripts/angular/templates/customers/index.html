@@ -4,6 +4,7 @@
       Customers
       <a class="btn btn-success">Add customer</a>
     </h1>
+    <input type="text" placeholder="Search" class="form-control" ng-model="query" ng-change="filterCustomers()">
  
     <div ng-show="customers.length">
       <table class="table table-striped">
@@ -29,6 +30,8 @@
             <td>{{ customer.city }}</td>
             <td>
               <a class="btn btn-primary btn-xs" ui-sref="/customer({ customerId: customer.id })">Show</a>
+              <a class="btn btn-warning btn-xs" ng-click="editCustomer(customer, $index)">Edit</a>
+              <a class="btn btn-danger btn-xs" ng-click="destroyCustomer(customer.id, $index)">Destroy</a>
             </td>
           </tr>
         </tbody>

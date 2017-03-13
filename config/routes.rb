@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
-  resources :customers
   root 'main#index'
+
+  resources :customers do
+    collection do
+      get :search
+    end
+  end
+
+
 end

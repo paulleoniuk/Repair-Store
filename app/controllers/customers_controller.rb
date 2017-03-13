@@ -53,6 +53,10 @@ class CustomersController < ApplicationController
     end
   end
 
+  def search
+    @customers = Customer.search(params[:query])
+  end
+
   private
     def set_customer
       @customer = Customer.find(params[:id])
