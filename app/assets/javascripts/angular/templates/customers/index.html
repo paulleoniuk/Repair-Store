@@ -10,21 +10,23 @@
         <thead>
           <tr>
             <th>Name</th>
+            <th>Surname</th>
+            <th>Phone</th>
             <th>Email</th>
             <th>Street</th>
             <th>City</th>
-            <th>Post code</th>
             <th></th>
           </tr>
         </thead>
  
         <tbody>
           <tr ng-repeat="customer in customers">
-            <td>{{ customer.name }}</td>
+            <td>{{ customer.first_name }}</td>
+            <td>{{ customer.last_name }}</td>
+            <td>{{ customer.phone }}</td>
             <td>{{ customer.email }}</td>
             <td>{{ customer.street }}</td>
             <td>{{ customer.city }}</td>
-            <td>{{ customer.post_code }}</td>
             <td>
               <a class="btn btn-primary btn-xs" ui-sref="/customer({ customerId: customer.id })">Show</a>
             </td>

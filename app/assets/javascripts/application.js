@@ -15,4 +15,3 @@
 //= require angular-rails-templates
 
 //= require_tree ./angular
-//= require_tree ./angular/templates/directives
