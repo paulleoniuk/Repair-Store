@@ -29,7 +29,7 @@ class CustomersController < ApplicationController
 
     respond_to do |format|
       if @customer.save
-        format.json { render :show, status: :created, location: @customer }
+        format.json
       else
         format.json { render json: @customer.errors, status: :unprocessable_entity }
       end
@@ -39,7 +39,7 @@ class CustomersController < ApplicationController
   def update
     respond_to do |format|
       if @customer.update(customer_params)
-        format.json { render :show, status: :ok, location: @customer }
+        format.json
       else
         format.json { render json: @customer.errors, status: :unprocessable_entity }
       end

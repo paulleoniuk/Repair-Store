@@ -9,8 +9,20 @@
         <div class="modal-body">
           <div class="form-group">
             <label>Name:</label>
-            <input class="form-control" name="name" type="text" ng-model="new_customer.name" required/>
-            <span class="text-danger" ng-show="newCustomer.name.$touched && newCustomer.name.$invalid">The name is required.</span>
+            <input class="form-control" name="first_name" type="text" ng-model="new_customer.first_name" required/>
+            <span class="text-danger" ng-show="newCustomer.first_name.$touched && newCustomer.first_name.$invalid">The name is required.</span>
+          </div>
+
+          <div class="form-group">
+            <label>Surname:</label>
+            <input class="form-control" name="last_name" type="text" ng-model="new_customer.last_name" required/>
+            <span class="text-danger" ng-show="newCustomer.last_name.$touched && newCustomer.last_name.$invalid">The surname is required.</span>
+          </div>
+
+          <div class="form-group">
+            <label>Phone:</label>
+            <input class="form-control" name="phone" type="text" ng-model="new_customer.phone" required/>
+            <span class="text-danger" ng-show="newCustomer.phone.$touched && newCustomer.phone.$invalid">The phone is required.</span>
           </div>
  
           <div class="form-group">
@@ -29,12 +41,6 @@
             <label>Street:</label>
             <input class="form-control" name="street" type="text" ng-model="new_customer.street" required/>
             <span class="text-danger" ng-show="newCustomer.street.$touched && newCustomer.street.$invalid">The street is required.</span>
-          </div>
- 
-          <div class="form-group">
-            <label>Post code:</label>
-            <input class="form-control" name="post_code" type="text" ng-model="new_customer.post_code" required/>
-            <span class="text-danger" ng-show="newCustomer.post_code.$touched && newCustomer.post_code.$invalid">The post code is required.</span>
           </div>
         </div>
         <div class="modal-footer">
