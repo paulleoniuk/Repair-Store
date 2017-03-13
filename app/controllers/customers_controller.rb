@@ -3,6 +3,9 @@ class CustomersController < ApplicationController
 
   def index
     @customers = Customer.all
+    respond_to do |format|
+      format.json { render json: @customers }
+    end
   end
 
   def show
@@ -10,6 +13,9 @@ class CustomersController < ApplicationController
 
   def new
     @customer = Customer.new
+    respond_to do |format|
+      format.json { render json: @customer }
+    end
   end
 
   def edit

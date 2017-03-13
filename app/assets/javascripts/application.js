@@ -13,6 +13,6 @@
 //= require angular
 //= require angular-router
 //= require angular-rails-templates
-//= require_tree .
-//= require_tree ./angular/controllers
+
+//= require_tree ./angular
 //= require_tree ./angular/templates/directives
