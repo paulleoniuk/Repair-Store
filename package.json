@@ -1,11 +1,8 @@
 {
-  "name": "repair_store",
+  "name": "RepairStore",
+  "description": "a really cool app",
   "version": "1.0.0",
-  "description": "Repair-Store",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
+  "engines": {
+    "node": "6.10.0"
+  }
 }
