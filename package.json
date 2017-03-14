@@ -7,6 +7,6 @@
     "npm": "3.10.10"
   },
   "scripts": {
-  "start": "node /javascripts/angular/app.js"
+  "start": "node app/assets/javascripts/application.js"
 }
 }
