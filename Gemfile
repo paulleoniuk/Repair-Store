@@ -12,6 +12,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'angular_rails_csrf'
 gem 'angular-rails-templates'
 
+gem 'bower-rails'
+
 gem 'bootstrap-sass', '~> 3.3.6'
  
 group :development, :test do
